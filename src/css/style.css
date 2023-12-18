@@ -1,7 +1,9 @@
 .main {
   min-height: 100vh;
-  background-image: url('src\assets\Whalin\IrishFamBG.jpg');
+  width: 100%;
+  background-image: url('../css/images/clovers.png');
   background-size: cover;
+  width: auto;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -9,7 +11,7 @@
 
 .main2 {
   min-height: 100vh;
-  background-image: url('src\assets\Vernetti\ItalianAlps.jpg');
+  background-image: url('../css/images/italia.png'); 
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -17,10 +19,6 @@
   justify-content: center;
 }
 
-.dashboard {
-  width: 100%;
-  height: auto;
-}
 
 .tree {
   list-style: none;
@@ -32,12 +30,31 @@
 .headers {
   display: flex;
   flex-direction: row;
+  background: linear-gradient(to right top, #12b320, #ffffff, #e56814);
+}
+
+.headers2 {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to right top, #dc0a0a, #ffffff, #5ee74f);
 }
 
 .avatar {
   vertical-align: middle;
   width: 7rem;
   height: 100%;
+  border-radius: 50%;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar2 {
+  vertical-align: middle;
+  width: 7rem;
+  height: auto;
   border-radius: 50%;
 }
 

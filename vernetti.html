@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vernetti Family Tree</title>
+    <link rel="stylesheet" href="src\css\style.css" />
+</head>
+
+<body>
+
+    <section class="headers">
+        <h1>Vernetti Family Tree</h1>
+        <h1 style="padding-left: 60rem;"><a href="index.html">Whalin Family Tree</a></h1>
+    </section>
+
+    <main class="main2">
+        <ul class="tree" id="father-side">
+            <li class="node caret">(Mr.) Vernetti --- (Mrs.) Vernetti
+                <ul class="nested">
+                    <li class="node">Gavin Patrick Dillon --- Kathryn Ann Vernetti</li>
+                    <h5>Born: 22 Feb 1969, Silver Springs, Maryland</h5>
+                    <h5>Death: Living</h5>
+                    <h5>Married: 02 Nov 1996, South Bend, Indiana</h5>
+                    <h5>Death: Living</h5>
+                    <li class="node caret">Louis Rangel --- Kristin Lee Rangel</li>
+                        <ul class="nested">
+                            <li class="node">Nicolina Rangel</li>
+                        </ul>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="tree" id="mother-side">
+            <li class="node caret">(Mr.) Marshall --- (Mrs.) Marshall
+                <ul class="nested">
+                    <li class="node">Joan Vernetti</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <script>
+        // Add JavaScript for tree functionality here
+        document.querySelectorAll('.caret').forEach(item => {
+            item.addEventListener('click', function () {
+                const nestedList = this.parentElement.querySelector('.nested');
+                nestedList.classList.toggle('active');
+                this.classList.toggle('caret-down');
+            });
+        });
+    </script>
+</body>
+
+</html>

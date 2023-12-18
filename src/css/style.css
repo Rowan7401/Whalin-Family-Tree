@@ -1,0 +1,105 @@
+.main {
+  min-height: 100vh;
+  background-image: url('src\assets\Whalin\IrishFamBG.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.main2 {
+  min-height: 100vh;
+  background-image: url('src\assets\Vernetti\ItalianAlps.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+}
+
+.dashboard {
+  width: 100%;
+  height: auto;
+}
+
+.tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+.headers {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 7rem;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.h1 {
+  color: rgb(255, 255, 255);
+  font-size: 7rem;
+  font-weight: bolder;
+}
+
+.h5 {
+  font-size: 0.7rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  border: 5px solid rgb(43, 43, 43);
+  background-color: white;
+}
+
+li {
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  border: 5px solid rgb(70, 70, 70);
+  background-color: white;
+}
+
+ul,
+#myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none;
+  /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}

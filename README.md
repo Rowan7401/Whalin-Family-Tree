@@ -3,4 +3,4 @@ I built a much cleaner, stylized version within the Next.js framework with the h
 New site link: https://whalin-family-tree.netlify.app/
 
 
-Legacy Link: https://rowan7401.github.io/Whalin-Family-Tree/
+Legacy Link: https://rowan7401.github.io/Whalin-Family-Tree/src/html/
